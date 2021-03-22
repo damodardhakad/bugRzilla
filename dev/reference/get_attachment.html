@@ -148,22 +148,20 @@
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='fu'>get_attachment</span><span class='op'>(</span>issue <span class='op'>=</span> <span class='fl'>1</span><span class='op'>)</span>
-</div><div class='output co'>#&gt;               summary is_private size
-#&gt; 1 test attachment ...      FALSE  134
+</div><div class='output co'>#&gt;   content_type       creation_time flags file_name bug_id is_patch id creator
+#&gt; 1   text/plain 2010-02-16 17:42:59    NA      ed.c      1    FALSE  1   admin
+#&gt;   is_obsolete    last_change_time             summary is_private size
+#&gt; 1       FALSE 2010-02-16 17:43:29 test attachment ...      FALSE  134
+#&gt;                                                                                                                                                                                   data
+#&gt; 1 I2luY2x1ZGUgPFJpbnRlcm5hbHMuaD4KClNFWFAgbXlFdmFsKFNFWFAgRk4sIFNFWFAgZmlyc3RfYXJnKSB7CiAgcmV0dXJuIGV2YWwoTENPTlMoRk4sIENPTlMoZmlyc3RfYXJnLCBSX05pbFZhbHVlKSksIFJfR2xvYmFsRW52KTsKfQo=</div><div class='input'><span class='fu'>get_attachment</span><span class='op'>(</span>attachment <span class='op'>=</span> <span class='fl'>1</span><span class='op'>)</span>
+</div><div class='output co'>#&gt;         creation_time content_type bug_id is_patch file_name flags
+#&gt; 1 2010-02-16 17:42:59   text/plain      1    FALSE      ed.c    NA
+#&gt;      last_change_time is_obsolete creator id
+#&gt; 1 2010-02-16 17:43:29       FALSE   admin  1
 #&gt;                                                                                                                                                                                   data
 #&gt; 1 I2luY2x1ZGUgPFJpbnRlcm5hbHMuaD4KClNFWFAgbXlFdmFsKFNFWFAgRk4sIFNFWFAgZmlyc3RfYXJnKSB7CiAgcmV0dXJuIGV2YWwoTENPTlMoRk4sIENPTlMoZmlyc3RfYXJnLCBSX05pbFZhbHVlKSksIFJfR2xvYmFsRW52KTsKfQo=
-#&gt;   id creator is_obsolete    last_change_time flags file_name is_patch bug_id
-#&gt; 1  1   admin       FALSE 2010-02-16 17:43:29    NA      ed.c    FALSE      1
-#&gt;   content_type       creation_time
-#&gt; 1   text/plain 2010-02-16 17:42:59</div><div class='input'><span class='fu'>get_attachment</span><span class='op'>(</span>attachment <span class='op'>=</span> <span class='fl'>1</span><span class='op'>)</span>
-</div><div class='output co'>#&gt;         creation_time content_type is_patch bug_id file_name flags
-#&gt; 1 2010-02-16 17:42:59   text/plain    FALSE      1      ed.c    NA
-#&gt;      last_change_time is_obsolete id creator size
-#&gt; 1 2010-02-16 17:43:29       FALSE  1   admin  134
-#&gt;                                                                                                                                                                                   data
-#&gt; 1 I2luY2x1ZGUgPFJpbnRlcm5hbHMuaD4KClNFWFAgbXlFdmFsKFNFWFAgRk4sIFNFWFAgZmlyc3RfYXJnKSB7CiAgcmV0dXJuIGV2YWwoTENPTlMoRk4sIENPTlMoZmlyc3RfYXJnLCBSX05pbFZhbHVlKSksIFJfR2xvYmFsRW52KTsKfQo=
-#&gt;   is_private             summary
-#&gt; 1      FALSE test attachment ...</div></pre>
+#&gt;   size             summary is_private
+#&gt; 1  134 test attachment ...      FALSE</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
